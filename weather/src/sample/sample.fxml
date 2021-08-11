@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="657.0" prefWidth="326.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text layoutX="30.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather" textAlignment="CENTER" wrappingWidth="257.0">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Text>
+      <Text fill="#0053ff" layoutX="71.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="36.9443359375" layoutY="185.36376953125">
+         <children>
+            <AnchorPane layoutX="2.0556640625" layoutY="17.63623046875">
+               <children>
+                  <Text fx:id="temp_info" fill="RED" layoutX="0.0556640625" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="temp_feel" fill="RED" layoutX="0.0556640625" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ощущается:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="temp_max" fill="RED" layoutX="-1.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимум:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="temp_min" fill="RED" layoutX="-2.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Минимум:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="pressure" fill="RED" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="humidity" fill="RED" layoutX="1.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Влажность:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="wind" fill="RED" layoutX="-1.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ветер:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="windDirection" fill="RED" layoutX="-2.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Направление:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="city" layoutX="73.0" layoutY="75.0" promptText="Введите город" />
+      <Button fx:id="getData" layoutX="105.0" layoutY="590.0" mnemonicParsing="false" text="Узнать погоду" />
+   </children>
+</AnchorPane>
